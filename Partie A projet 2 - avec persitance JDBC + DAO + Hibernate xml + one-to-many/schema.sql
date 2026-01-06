@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS gestion_stock;
+USE gestion_stock;
+
+CREATE TABLE IF NOT EXISTS produits (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prix DOUBLE NOT NULL
+);

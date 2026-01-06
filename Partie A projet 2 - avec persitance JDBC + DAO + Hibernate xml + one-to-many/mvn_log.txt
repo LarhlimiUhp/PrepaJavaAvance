@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.examen.stock:gestion-stock >-------------------
+[INFO] Building gestion-stock 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ gestion-stock ---
+[INFO] skip non existing resourceDirectory C:\2025-2026\Java\projet Java 2025\préparation examen\Partie A projet 2\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ gestion-stock ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 7 source files with javac [debug target 17] to target\classes
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.072 s
+[INFO] Finished at: 2026-01-04T06:04:56-05:00
+[INFO] ------------------------------------------------------------------------

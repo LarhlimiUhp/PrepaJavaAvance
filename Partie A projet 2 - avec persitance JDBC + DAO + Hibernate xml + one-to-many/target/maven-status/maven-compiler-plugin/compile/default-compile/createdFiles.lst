@@ -1,0 +1,13 @@
+com\examen\stock\dao\ProduitDaoHibernate.class
+com\examen\stock\service\ProduitService.class
+com\examen\stock\repository\Repository.class
+com\examen\stock\model\Catalogue.class
+com\examen\stock\model\Produit.class
+com\examen\stock\MainApp.class
+com\examen\stock\util\DatabaseConnection.class
+com\examen\stock\repository\ProduitJDBCRepository.class
+com\examen\stock\service\GestionnaireStock.class
+com\examen\stock\util\HibernateUtil.class
+com\examen\stock\exception\StockException.class
+com\examen\stock\dao\ProduitDaoImpl.class
+com\examen\stock\dao\IDao.class
