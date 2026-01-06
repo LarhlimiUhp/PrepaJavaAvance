@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.examen.stock.model">
+    <class name="Produit" table="produits">
+        <id name="nom" column="nom">
+            <generator class="assigned"/>
+        </id>
+        <property name="prix" column="prix" type="double"/>
+        
+        <!-- Many-to-One relationship back to Catalogue -->
+        <many-to-one name="catalogue" column="catalogue_id" class="Catalogue" />
+    </class>
+</hibernate-mapping>

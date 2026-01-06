@@ -1,0 +1,786 @@
+﻿mvn : WARNING: A terminally deprecated method in 
+sun.misc.Unsafe has been called
+Au caractère Ligne:1 : 1
++ mvn compile exec:java -DskipTests > fx_run.log 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : NotSpecified: (WARN 
+   ING: A term...has been called:String) [], Rem  
+  oteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: sun.misc.Unsafe::staticFieldBase has 
+been called by 
+com.google.inject.internal.aop.HiddenClassDefiner 
+(file:/C:/ProgramData/chocolatey/lib/maven/apache-
+maven-3.9.11/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the 
+maintainers of class 
+com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be 
+removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.examen.stock:gestion-stock >-------------------
+[INFO] Building gestion-stock 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:17.0.8 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ gestion-stock ---
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ gestion-stock ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ gestion-stock ---
+jan. 05, 2026 9:07:23 P.M. 
+com.sun.javafx.application.PlatformImpl startup
+WARNING: Unsupported JavaFX configuration: 
+classes were loaded from 'unnamed module 
+@14e8e392'
+jan. 05, 2026 9:07:23 P.M. org.hibernate.Version 
+logVersion
+INFO: HHH000412: Hibernate ORM core version 
+6.2.7.Final
+jan. 05, 2026 9:07:23 P.M. 
+org.hibernate.cfg.Environment <clinit>
+INFO: HHH000406: Using bytecode reflection 
+optimizer
+jan. 05, 2026 9:07:24 P.M. 
+org.hibernate.boot.jaxb.internal.MappingBinder 
+doBind
+WARN: HHH90000028: Support for 
+`<hibernate-mappings/>` is deprecated [RESOURCE : 
+com/examen/stock/model/Produit.hbm.xml]; migrate 
+to orm.xml or mapping.xml, or enable 
+`hibernate.transform_hbm_xml.enabled` for on the 
+fly transformation
+jan. 05, 2026 9:07:24 P.M. 
+org.hibernate.boot.jaxb.internal.MappingBinder 
+doBind
+WARN: HHH90000028: Support for 
+`<hibernate-mappings/>` is deprecated [RESOURCE : 
+com/examen/stock/model/Catalogue.hbm.xml]; 
+migrate to orm.xml or mapping.xml, or enable 
+`hibernate.transform_hbm_xml.enabled` for on the 
+fly transformation
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl configure
+WARN: HHH10001002: Using built-in connection pool 
+(not intended for production use)
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: 
+com.mysql.cj.jdbc.Driver
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL 
+[jdbc:mysql://localhost:3306/gestion_stock]
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl buildCreator
+INFO: HHH10001001: Connection properties: 
+{user=root, password=****}
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.connections.internal.DriverManagerConnectionPro
+viderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 
+(min=1)
+jan. 05, 2026 9:07:24 P.M. org.hibernate.engine.jd
+bc.env.internal.JdbcEnvironmentInitiator 
+initiateService
+WARN: HHH000342: Could not obtain connection to 
+query metadata
+java.lang.IllegalStateException: Cannot get a 
+connection as the driver manager is not properly 
+initialized
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl.getConnection
+(DriverManagerConnectionProviderImpl.java:262)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator$ConnectionProviderJdbcConnection
+Access.obtainConnection(JdbcEnvironmentInitiator.j
+ava:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator.initiateService(JdbcEnvironmentI
+nitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator.initiateService(JdbcEnvironmentI
+nitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardS
+erviceRegistryImpl.initiateService(StandardService
+RegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.createService(AbstractServiceRegistry
+Impl.java:264)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.initializeService(AbstractServiceRegi
+stryImpl.java:239)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.getService(AbstractServiceRegistryImp
+l.java:216)
+	at org.hibernate.engine.jdbc.internal.JdbcService
+sImpl.configure(JdbcServicesImpl.java:45)
+	at org.hibernate.boot.registry.internal.StandardS
+erviceRegistryImpl.configureService(StandardServic
+eRegistryImpl.java:125)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.initializeService(AbstractServiceRegi
+stryImpl.java:248)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.getService(AbstractServiceRegistryImp
+l.java:216)
+	at org.hibernate.engine.jdbc.connections.internal
+.BasicConnectionCreator.convertSqlException(BasicC
+onnectionCreator.java:121)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverConnectionCreator.makeConnection(DriverConn
+ectionCreator.java:43)
+	at org.hibernate.engine.jdbc.connections.internal
+.BasicConnectionCreator.createConnection(BasicConn
+ectionCreator.java:61)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl$PooledConnect
+ions.addConnections(DriverManagerConnectionProvide
+rImpl.java:501)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl$PooledConnect
+ions.<init>(DriverManagerConnectionProviderImpl.ja
+va:367)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl$PooledConnect
+ions$Builder.build(DriverManagerConnectionProvider
+Impl.java:552)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl.buildPool(Dri
+verManagerConnectionProviderImpl.java:105)
+	at org.hibernate.engine.jdbc.connections.internal
+.DriverManagerConnectionProviderImpl.configure(Dri
+verManagerConnectionProviderImpl.java:81)
+	at org.hibernate.boot.registry.internal.StandardS
+erviceRegistryImpl.configureService(StandardServic
+eRegistryImpl.java:125)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.initializeService(AbstractServiceRegi
+stryImpl.java:248)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.getService(AbstractServiceRegistryImp
+l.java:216)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator.buildJdbcConnectionAccess(JdbcEn
+vironmentInitiator.java:283)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator.initiateService(JdbcEnvironmentI
+nitiator.java:150)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnv
+ironmentInitiator.initiateService(JdbcEnvironmentI
+nitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardS
+erviceRegistryImpl.initiateService(StandardService
+RegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.createService(AbstractServiceRegistry
+Impl.java:264)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.initializeService(AbstractServiceRegi
+stryImpl.java:239)
+	at org.hibernate.service.internal.AbstractService
+RegistryImpl.getService(AbstractServiceRegistryImp
+l.java:216)
+	at org.hibernate.boot.model.relational.Database.<
+init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCo
+llectorImpl.getDatabase(InFlightMetadataCollectorI
+mpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCo
+llectorImpl.<init>(InFlightMetadataCollectorImpl.j
+ava:198)
+	at org.hibernate.boot.model.process.spi.MetadataB
+uildingProcess.complete(MetadataBuildingProcess.ja
+va:166)
+	at org.hibernate.boot.model.process.spi.MetadataB
+uildingProcess.build(MetadataBuildingProcess.java:
+125)
+	at org.hibernate.boot.internal.MetadataBuilderImp
+l.build(MetadataBuilderImpl.java:451)
+	at org.hibernate.boot.internal.MetadataBuilderImp
+l.build(MetadataBuilderImpl.java:102)
+	at org.hibernate.cfg.Configuration.buildSessionFa
+ctory(Configuration.java:910)
+	at org.hibernate.cfg.Configuration.buildSessionFa
+ctory(Configuration.java:960)
+	at com.examen.stock.util.HibernateUtil.buildSessi
+onFactory(HibernateUtil.java:17)
+	at com.examen.stock.util.HibernateUtil.<clinit>(H
+ibernateUtil.java:7)
+	at com.examen.stock.dao.ProduitDaoHibernate.readA
+ll(ProduitDaoHibernate.java:29)
+	at com.examen.stock.service.ProduitService.recupe
+rerTout(ProduitService.java:21)
+	at com.examen.stock.view.ProduitController.handle
+Refresh(ProduitController.java:52)
+	at com.examen.stock.view.ProduitController.initia
+lize(ProduitController.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHan
+dleAccessor.invoke(DirectMethodHandleAccessor.java
+:104)
+	at java.base/java.lang.reflect.Method.invoke(Meth
+od.java:565)
+	at com.sun.javafx.reflect.Trampoline.invoke(Metho
+dUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHan
+dleAccessor.invoke(DirectMethodHandleAccessor.java
+:104)
+	at java.base/java.lang.reflect.Method.invoke(Meth
+od.java:565)
+	at com.sun.javafx.reflect.MethodUtil.invoke(Metho
+dUtil.java:275)
+	at com.sun.javafx.fxml.MethodHelper.invoke(Method
+Helper.java:84)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:2680)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:2555)
+	at javafx.fxml.FXMLLoader$IncludeElement.construc
+tValue(FXMLLoader.java:1153)
+	at javafx.fxml.FXMLLoader$ValueElement.processSta
+rtElement(FXMLLoader.java:757)
+	at javafx.fxml.FXMLLoader.processStartElement(FXM
+LLoader.java:2845)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:2641)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:2555)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:3368)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:3324)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:3292)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:3264)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.jav
+a:3240)
+	at 
+javafx.fxml.FXMLLoader.load(FXMLLoader.java:3233)
+	at com.examen.stock.JavaFXApp.start(JavaFXApp.jav
+a:13)
+	at com.sun.javafx.application.LauncherImpl.lambda
+$launchApplication1$9(LauncherImpl.java:847)
+	at com.sun.javafx.application.PlatformImpl.lambda
+$runAndWait$12(PlatformImpl.java:484)
+	at com.sun.javafx.application.PlatformImpl.lambda
+$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPri
+vileged(AccessController.java:138)
+	at com.sun.javafx.application.PlatformImpl.lambda
+$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.
+run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(N
+ative Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$run
+Loop$3(WinApplication.java:184)
+	at 
+java.base/java.lang.Thread.run(Thread.java:1474)
+
+jan. 05, 2026 9:07:24 P.M. 
+org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+logExceptions
+WARN: SQL Error: 0, SQLState: 08S01
+jan. 05, 2026 9:07:24 P.M. 
+org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+logExceptions
+ERROR: Communications link failure
+
+The last packet sent successfully to the server 
+was 0 milliseconds ago. The driver has not 
+received any packets from the server.
+Initial SessionFactory creation failed.org.hiberna
+te.service.spi.ServiceException: Unable to create 
+requested service [org.hibernate.engine.jdbc.env.s
+pi.JdbcEnvironment] due to: Error calling 
+Driver#connect [Communications link failure
+
+The last packet sent successfully to the server 
+was 0 milliseconds ago. The driver has not 
+received any packets from the server.] [null]
+Exception in Application start method
+[WARNING] 
+java.lang.RuntimeException: Exception in Application start method
+    at com.sun.javafx.application.LauncherImpl.launchApplication1 (LauncherImpl.java:901)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2 (LauncherImpl.java:196)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: javafx.fxml.LoadException: 
+/C:/2025-2026/Java/projet%20Java%202025/prÚparation%20examen/Partie%20A%20projet%202/target/classes/com/examen/stock/view/ProduitView.fxml
+/C:/2025-2026/Java/projet%20Java%202025/prÚparation%20examen/Partie%20A%20projet%202/target/classes/com/examen/stock/view/MainView.fxml:19
+
+    at javafx.fxml.FXMLLoader.constructLoadException (FXMLLoader.java:2714)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2684)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: java.lang.reflect.InvocationTargetException
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:119)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: java.lang.ExceptionInInitializerError
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:20)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Error calling Driver#connect [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [null]
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService (AbstractServiceRegistryImpl.java:277)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:239)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.boot.model.relational.Database.<init> (Database.java:45)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase (InFlightMetadataCollectorImpl.java:230)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init> (InFlightMetadataCollectorImpl.java:198)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete (MetadataBuildingProcess.java:166)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build (MetadataBuildingProcess.java:125)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:451)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:102)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:910)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:960)
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:17)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [null]
+    at org.hibernate.exception.internal.SQLStateConversionDelegate.convert (SQLStateConversionDelegate.java:98)
+    at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert (StandardSQLExceptionConverter.java:56)
+    at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert (SqlExceptionHelper.java:108)
+    at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException (BasicConnectionCreator.java:123)
+    at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection (DriverConnectionCreator.java:43)
+    at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection (BasicConnectionCreator.java:61)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections (DriverManagerConnectionProviderImpl.java:501)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> (DriverManagerConnectionProviderImpl.java:367)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build (DriverManagerConnectionProviderImpl.java:552)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool (DriverManagerConnectionProviderImpl.java:105)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure (DriverManagerConnectionProviderImpl.java:81)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService (StandardServiceRegistryImpl.java:125)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:248)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess (JdbcEnvironmentInitiator.java:283)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:150)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:34)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService (StandardServiceRegistryImpl.java:119)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService (AbstractServiceRegistryImpl.java:264)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:239)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.boot.model.relational.Database.<init> (Database.java:45)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase (InFlightMetadataCollectorImpl.java:230)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init> (InFlightMetadataCollectorImpl.java:198)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete (MetadataBuildingProcess.java:166)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build (MetadataBuildingProcess.java:125)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:451)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:102)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:910)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:960)
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:17)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+    at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException (SQLError.java:175)
+    at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException (SQLExceptionsMapping.java:64)
+    at com.mysql.cj.jdbc.ConnectionImpl.createNewIO (ConnectionImpl.java:825)
+    at com.mysql.cj.jdbc.ConnectionImpl.<init> (ConnectionImpl.java:446)
+    at com.mysql.cj.jdbc.ConnectionImpl.getInstance (ConnectionImpl.java:239)
+    at com.mysql.cj.jdbc.NonRegisteringDriver.connect (NonRegisteringDriver.java:188)
+    at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection (DriverConnectionCreator.java:40)
+    at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection (BasicConnectionCreator.java:61)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections (DriverManagerConnectionProviderImpl.java:501)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> (DriverManagerConnectionProviderImpl.java:367)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build (DriverManagerConnectionProviderImpl.java:552)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool (DriverManagerConnectionProviderImpl.java:105)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure (DriverManagerConnectionProviderImpl.java:81)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService (StandardServiceRegistryImpl.java:125)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:248)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess (JdbcEnvironmentInitiator.java:283)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:150)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:34)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService (StandardServiceRegistryImpl.java:119)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService (AbstractServiceRegistryImpl.java:264)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:239)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.boot.model.relational.Database.<init> (Database.java:45)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase (InFlightMetadataCollectorImpl.java:230)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init> (InFlightMetadataCollectorImpl.java:198)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete (MetadataBuildingProcess.java:166)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build (MetadataBuildingProcess.java:125)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:451)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:102)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:910)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:960)
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:17)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+    at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance (DirectConstructorHandleAccessor.java:62)
+    at java.lang.reflect.Constructor.newInstanceWithCaller (Constructor.java:499)
+    at java.lang.reflect.Constructor.newInstance (Constructor.java:483)
+    at com.mysql.cj.exceptions.ExceptionFactory.createException (ExceptionFactory.java:62)
+    at com.mysql.cj.exceptions.ExceptionFactory.createException (ExceptionFactory.java:105)
+    at com.mysql.cj.exceptions.ExceptionFactory.createException (ExceptionFactory.java:150)
+    at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException (ExceptionFactory.java:166)
+    at com.mysql.cj.protocol.a.NativeSocketConnection.connect (NativeSocketConnection.java:89)
+    at com.mysql.cj.NativeSession.connect (NativeSession.java:121)
+    at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly (ConnectionImpl.java:945)
+    at com.mysql.cj.jdbc.ConnectionImpl.createNewIO (ConnectionImpl.java:815)
+    at com.mysql.cj.jdbc.ConnectionImpl.<init> (ConnectionImpl.java:446)
+    at com.mysql.cj.jdbc.ConnectionImpl.getInstance (ConnectionImpl.java:239)
+    at com.mysql.cj.jdbc.NonRegisteringDriver.connect (NonRegisteringDriver.java:188)
+    at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection (DriverConnectionCreator.java:40)
+    at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection (BasicConnectionCreator.java:61)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections (DriverManagerConnectionProviderImpl.java:501)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> (DriverManagerConnectionProviderImpl.java:367)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build (DriverManagerConnectionProviderImpl.java:552)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool (DriverManagerConnectionProviderImpl.java:105)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure (DriverManagerConnectionProviderImpl.java:81)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService (StandardServiceRegistryImpl.java:125)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:248)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess (JdbcEnvironmentInitiator.java:283)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:150)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:34)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService (StandardServiceRegistryImpl.java:119)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService (AbstractServiceRegistryImpl.java:264)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:239)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.boot.model.relational.Database.<init> (Database.java:45)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase (InFlightMetadataCollectorImpl.java:230)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init> (InFlightMetadataCollectorImpl.java:198)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete (MetadataBuildingProcess.java:166)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build (MetadataBuildingProcess.java:125)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:451)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:102)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:910)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:960)
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:17)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+Caused by: java.net.ConnectException: Connection refused: connect
+    at sun.nio.ch.Net.connect0 (Native Method)
+    at sun.nio.ch.Net.connect (Net.java:546)
+    at sun.nio.ch.Net.connect (Net.java:535)
+    at sun.nio.ch.NioSocketImpl.connect (NioSocketImpl.java:585)
+    at java.net.SocksSocketImpl.connect (SocksSocketImpl.java:284)
+    at java.net.Socket.connect (Socket.java:659)
+    at com.mysql.cj.protocol.StandardSocketFactory.connect (StandardSocketFactory.java:153)
+    at com.mysql.cj.protocol.a.NativeSocketConnection.connect (NativeSocketConnection.java:63)
+    at com.mysql.cj.NativeSession.connect (NativeSession.java:121)
+    at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly (ConnectionImpl.java:945)
+    at com.mysql.cj.jdbc.ConnectionImpl.createNewIO (ConnectionImpl.java:815)
+    at com.mysql.cj.jdbc.ConnectionImpl.<init> (ConnectionImpl.java:446)
+    at com.mysql.cj.jdbc.ConnectionImpl.getInstance (ConnectionImpl.java:239)
+    at com.mysql.cj.jdbc.NonRegisteringDriver.connect (NonRegisteringDriver.java:188)
+    at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection (DriverConnectionCreator.java:40)
+    at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection (BasicConnectionCreator.java:61)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections (DriverManagerConnectionProviderImpl.java:501)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> (DriverManagerConnectionProviderImpl.java:367)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build (DriverManagerConnectionProviderImpl.java:552)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool (DriverManagerConnectionProviderImpl.java:105)
+    at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure (DriverManagerConnectionProviderImpl.java:81)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService (StandardServiceRegistryImpl.java:125)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:248)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess (JdbcEnvironmentInitiator.java:283)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:150)
+    at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService (JdbcEnvironmentInitiator.java:34)
+    at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService (StandardServiceRegistryImpl.java:119)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService (AbstractServiceRegistryImpl.java:264)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService (AbstractServiceRegistryImpl.java:239)
+    at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService (AbstractServiceRegistryImpl.java:216)
+    at org.hibernate.boot.model.relational.Database.<init> (Database.java:45)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase (InFlightMetadataCollectorImpl.java:230)
+    at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init> (InFlightMetadataCollectorImpl.java:198)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete (MetadataBuildingProcess.java:166)
+    at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build (MetadataBuildingProcess.java:125)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:451)
+    at org.hibernate.boot.internal.MetadataBuilderImpl.build (MetadataBuilderImpl.java:102)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:910)
+    at org.hibernate.cfg.Configuration.buildSessionFactory (Configuration.java:960)
+    at com.examen.stock.util.HibernateUtil.buildSessionFactory (HibernateUtil.java:17)
+    at com.examen.stock.util.HibernateUtil.<clinit> (HibernateUtil.java:7)
+    at com.examen.stock.dao.ProduitDaoHibernate.readAll (ProduitDaoHibernate.java:29)
+    at com.examen.stock.service.ProduitService.recupererTout (ProduitService.java:21)
+    at com.examen.stock.view.ProduitController.handleRefresh (ProduitController.java:52)
+    at com.examen.stock.view.ProduitController.initialize (ProduitController.java:33)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.Trampoline.invoke (MethodUtil.java:77)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at com.sun.javafx.reflect.MethodUtil.invoke (MethodUtil.java:275)
+    at com.sun.javafx.fxml.MethodHelper.invoke (MethodHelper.java:84)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2680)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader$IncludeElement.constructValue (FXMLLoader.java:1153)
+    at javafx.fxml.FXMLLoader$ValueElement.processStartElement (FXMLLoader.java:757)
+    at javafx.fxml.FXMLLoader.processStartElement (FXMLLoader.java:2845)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2641)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:2555)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3368)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3324)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3292)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3264)
+    at javafx.fxml.FXMLLoader.loadImpl (FXMLLoader.java:3240)
+    at javafx.fxml.FXMLLoader.load (FXMLLoader.java:3233)
+    at com.examen.stock.JavaFXApp.start (JavaFXApp.java:13)
+    at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9 (LauncherImpl.java:847)
+    at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12 (PlatformImpl.java:484)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$10 (PlatformImpl.java:457)
+    at java.security.AccessController.doPrivileged (AccessController.java:138)
+    at com.sun.javafx.application.PlatformImpl.lambda$runLater$11 (PlatformImpl.java:456)
+    at com.sun.glass.ui.InvokeLaterDispatcher$Future.run (InvokeLaterDispatcher.java:96)
+    at com.sun.glass.ui.win.WinApplication._runLoop (Native Method)
+    at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3 (WinApplication.java:184)
+    at java.lang.Thread.run (Thread.java:1474)
+[WARNING] thread Thread[#60,mysql-cj-abandoned-connection-cleanup,5,com.examen.stock.JavaFXLauncher] was interrupted but is still alive after waiting at least 14999msecs
+[WARNING] thread Thread[#60,mysql-cj-abandoned-connection-cleanup,5,com.examen.stock.JavaFXLauncher] will linger despite being asked to die via interruption
+[WARNING] NOTE: 1 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.955 s
+[INFO] Finished at: 2026-01-05T21:07:39-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.1.0:java (default-cli) on project gestion-stock: An exception occurred while executing the Java class. Exception in Application start method: 
+[ERROR] /C:/2025-2026/Java/projet%20Java%202025/prÚparation%20examen/Partie%20A%20projet%202/target/classes/com/examen/stock/view/ProduitView.fxml
+[ERROR] /C:/2025-2026/Java/projet%20Java%202025/prÚparation%20examen/Partie%20A%20projet%202/target/classes/com/examen/stock/view/MainView.fxml:19: InvocationTargetException: ExceptionInInitializerError: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Error calling Driver#connect [Communications link failure
+[ERROR] 
+[ERROR] The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [null]: Connection refused: connect
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

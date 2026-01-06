@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.examen.stock.view.CatalogueController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    
+    <Label text="Gestion des Catalogues" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="catalogueNomField" promptText="Nom du catalogue"/>
+        <Button text="Ajouter Catalogue" onAction="#handleAjouterCatalogue"/>
+    </HBox>
+    
+    <TableView fx:id="catalogueTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNom" text="Nom" prefWidth="200"/>
+        </columns>
+    </TableView>
+    
+    <HBox spacing="10">
+        <Button text="Rafraîchir" onAction="#handleRefresh"/>
+        <Button text="Voir Détails" onAction="#handleVoirDetails"/>
+    </HBox>
+</VBox>
