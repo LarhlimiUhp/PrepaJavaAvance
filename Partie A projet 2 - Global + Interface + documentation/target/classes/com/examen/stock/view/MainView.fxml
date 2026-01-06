@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.examen.stock.view.MainController">
+    <top>
+        <MenuBar>
+            <Menu text="Fichier">
+                <MenuItem text="Quitter" onAction="#handleExit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TabPane>
+            <tabs>
+                <Tab text="Produits" closable="false">
+                    <fx:include source="ProduitView.fxml"/>
+                </Tab>
+                <Tab text="Catalogues" closable="false">
+                    <fx:include source="CatalogueView.fxml"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.examen.stock.view.ProduitController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    
+    <Label text="Gestion des Produits" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="nomField" promptText="Nom du produit"/>
+        <TextField fx:id="prixField" promptText="Prix"/>
+        <Button text="Ajouter" onAction="#handleAjouterProduit"/>
+    </HBox>
+    
+    <TableView fx:id="produitTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colNom" text="Nom" prefWidth="150"/>
+            <TableColumn fx:id="colPrix" text="Prix" prefWidth="100"/>
+        </columns>
+    </TableView>
+    
+    <HBox spacing="10">
+        <Button text="Rafraîchir" onAction="#handleRefresh"/>
+        <Button text="Supprimer" onAction="#handleSupprimerProduit"/>
+    </HBox>
+</VBox>
