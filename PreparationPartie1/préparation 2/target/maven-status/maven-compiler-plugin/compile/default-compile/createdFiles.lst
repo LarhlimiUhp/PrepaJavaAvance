@@ -1,0 +1,6 @@
+com\projet\javafx\MainApp.class
+com\projet\javafx\controller\CatalogueController.class
+com\projet\javafx\controller\ProduitController.class
+com\projet\javafx\controller\MainController.class
+com\projet\javafx\model\Produit.class
+com\projet\javafx\model\Catalogue.class
