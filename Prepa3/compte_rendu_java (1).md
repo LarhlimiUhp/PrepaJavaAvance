@@ -1,6 +1,6 @@
 # Compte Rendu Détaillé : Révision Développement Java Avancé 2025-2026
 
-**Étudiant :** [Votre Nom]  
+**A. Larhlimi
 **Date :** 09 Janvier 2026  
 **Module :** Développement Java Avancé  
 **Document source :** RevisionGlobale_JavaAvancee2526.pdf
