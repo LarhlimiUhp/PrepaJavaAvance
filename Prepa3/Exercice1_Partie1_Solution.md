@@ -1,4 +1,5 @@
 # Exercice 1 Partie 1 : Solution Complète
+![Uploading image.png…]()
 
 ## Analyse du Diagramme
 
